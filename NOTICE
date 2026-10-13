@@ -63,3 +63,5 @@ Rust dependencies (vello_cpu, kurbo, skrifa, harfrust, image, egui, eframe, …)
 licensed (MIT/Apache-2.0/BSD/ISC/Zlib) and fetched through crates.io.
 
 No Adobe icons, images or artwork are included.
+
+Modified by sdsdilqem: added a license check (crates/craft-license) that DesignCraft runs at start-up.

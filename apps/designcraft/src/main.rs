@@ -242,6 +242,8 @@ fn main() -> eframe::Result {
     // First, so every start-up record (and the engine's panic hook, installed with the first
     // Session) is captured; see `logging`.
     let logger = logging::install();
+    // Stop here, with a message, unless this computer has a valid license (`craft-license`).
+    craft_license::enforce("DesignCraft");
     let mut control_port = control_port_from("DESIGNCRAFT_CONTROL_PORT", std::env::var("DESIGNCRAFT_CONTROL_PORT").ok());
     let mut files = Vec::new();
     let mut sample = false;
